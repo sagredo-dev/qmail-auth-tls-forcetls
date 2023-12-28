@@ -22,7 +22,7 @@ This qmail distribution puts together netqmail-1.06 with the following patches (
   You have to declare FORCETLS=0 if you want to allow the auth without TLS
   https://notes.sagredo.eu/files/qmail/patches/roberto-netqmail-1.06_force-tls/force-tls_marcel.patch
 
-* Download and compile
+## Install
 ```
 make
 make setup check
@@ -30,6 +30,5 @@ make setup check
 
 * You have to export SMTPAUTH in your run file if you want to do the auth
 
-Info and support
-----------------
+## Info and support
 You can find more info and ask for support here https://notes.sagredo.eu/qmail-notes-185/smtp-auth-qmail-tls-forcetls-patch-for-qmail-84.html.
