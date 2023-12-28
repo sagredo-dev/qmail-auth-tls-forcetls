@@ -1,3 +1,7 @@
+# qmail
+
+[qmail](http://cr.yp.to/qmail.htm
+
 More info at https://notes.sagredo.eu/qmail-notes-185/smtp-auth-qmail-tls-forcetls-patch-for-qmail-84.html
 
 This qmail distribution puts together netqmail-1.06 with the following patches (more info in the README file):
