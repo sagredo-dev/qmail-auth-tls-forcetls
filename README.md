@@ -1,6 +1,8 @@
 # qmail
 
-[qmail](http://cr.yp.to/qmail.htm
+[qmail](http://cr.yp.to/qmail.html) is a secure, reliable, efficient, simple message transfer agent originally. It is designed for typical Internet-connected UNIX hosts. It was developed by [D. J. Bernstein](http://cr.yp.to/djb.html).
+
+## My patched qmail with auth+tls+forcetls
 
 More info at https://notes.sagredo.eu/qmail-notes-185/smtp-auth-qmail-tls-forcetls-patch-for-qmail-84.html
 
