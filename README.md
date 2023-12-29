@@ -1,3 +1,9 @@
+# qmail
+
+[qmail](http://cr.yp.to/qmail.html) is a secure, reliable, efficient, simple message transfer agent. It is designed for typical Internet-connected UNIX hosts. It was developed by [D. J. Bernstein](http://cr.yp.to/djb.html).
+
+## My patched qmail with auth+tls+forcetls
+
 More info at https://notes.sagredo.eu/qmail-notes-185/smtp-auth-qmail-tls-forcetls-patch-for-qmail-84.html
 
 This qmail distribution puts together netqmail-1.06 with the following patches (more info in the README file):
@@ -16,10 +22,13 @@ This qmail distribution puts together netqmail-1.06 with the following patches (
   You have to declare FORCETLS=0 if you want to allow the auth without TLS
   https://notes.sagredo.eu/files/qmail/patches/roberto-netqmail-1.06_force-tls/force-tls_marcel.patch
 
-* Download and compile
+## Install
 ```
 make
 make setup check
 ```
 
 * You have to export SMTPAUTH in your run file if you want to do the auth
+
+## Info and support
+You can find more info and ask for support here https://notes.sagredo.eu/qmail-notes-185/smtp-auth-qmail-tls-forcetls-patch-for-qmail-84.html.
