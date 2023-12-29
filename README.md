@@ -28,7 +28,12 @@ make
 make setup check
 ```
 
-* You have to export SMTPAUTH in your run file if you want to do the auth
+You have to export SMTPAUTH in your run file if you want to do the auth. For example:
+```
+export SMTPAUTH="!"
+```
+
+[README.auth](https://github.com/sagredo-dev/qmail-auth-tls-forcetls/blob/main/README.auth) file for more info.
 
 ## Info and support
 You can find more info and ask for support here https://notes.sagredo.eu/qmail-notes-185/smtp-auth-qmail-tls-forcetls-patch-for-qmail-84.html.
