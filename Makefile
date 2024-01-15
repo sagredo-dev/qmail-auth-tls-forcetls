@@ -1458,7 +1458,7 @@ base64.o md5c.o hmac_md5.o \
 dns.lib socket.lib
 	./load qmail-remote control.o constmap.o timeoutread.o \
 	timeoutwrite.o timeoutconn.o tcpto.o now.o dns.o ip.o \
-	tls.o ssl_timeoutio.o -L/usr/local/ssl/lib -lssl -lcrypto \
+	tls.o ssl_timeoutio.o -lssl -lcrypto \
 	ipalloc.o ipme.o quote.o ndelay.a case.a sig.a open.a \
 	lock.a seek.a getln.a stralloc.a alloc.a substdio.a error.a \
 	base64.o md5c.o hmac_md5.o \
@@ -1555,7 +1555,7 @@ open.a sig.a case.a env.a stralloc.a alloc.a substdio.a error.a str.a \
 fs.a auto_qmail.o base64.o socket.lib
 	./load qmail-smtpd rcpthosts.o commands.o timeoutread.o \
 	timeoutwrite.o ip.o ipme.o ipalloc.o control.o constmap.o \
-	tls.o ssl_timeoutio.o ndelay.a -L/usr/local/ssl/lib -lssl -lcrypto \
+	tls.o ssl_timeoutio.o ndelay.a -lssl -lcrypto \
 	received.o date822fmt.o now.o qmail.o cdb.a fd.a wait.a \
 	datetime.a getln.a open.a sig.a case.a env.a stralloc.a \
 	alloc.a substdio.a error.a str.a fs.a auto_qmail.o base64.o  `cat \
@@ -1844,8 +1844,7 @@ date822fmt.h date822fmt.c dns.h dns.c trylsock.c tryrsolv.c ip.h ip.c \
 ipalloc.h ipalloc.c select.h1 select.h2 trysysel.c ndelay.h ndelay.c \
 ndelay_off.c direntry.3 direntry.h1 direntry.h2 trydrent.c prot.h \
 prot.c chkshsgr.c warn-shsgr tryshsgr.c ipme.h ipme.c trysalen.c \
-maildir.5 maildir.h maildir.c tcp-environ.5 constmap.h constmap.c \
-update_tmprsadh
+maildir.5 maildir.h maildir.c tcp-environ.5 constmap.h constmap.c
 	shar -m `cat FILES` > shar
 	chmod 400 shar
 
